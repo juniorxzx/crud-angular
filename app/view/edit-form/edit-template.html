@@ -1,0 +1,128 @@
+<div ng-controller="EditController" class="container mt-4 ">
+    <form ng-submit="submitForm()">
+        <div class="text-center fw-bolder p-4">Dados pessoais</div>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="nome" class="form-control" ng-model="nome" />
+                    <label class="form-label" for="nome">Nome</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <input type="number" id="idade" class="form-control" ng-model="idade" />
+                    <label class="form-label" for="idade">Idade</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="email" class="form-control" ng-model="email" />
+                    <label class="form-label" for="email">Email</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="dataNascimento" class="form-control" ng-model="dataNascimento" />
+                    <label class="form-label" for="dataNascimento">Data de nascimento</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="telefone" class="form-control" ng-model="telefone" />
+                    <label class="form-label" for="telefone">Telefone</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="celular" class="form-control" ng-model="celular" />
+                    <label class="form-label" for="celular">Celular</label>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Endereço -->
+    <form ng-submit="submitEndForm()">
+        <div class="text-center fw-bolder p-4">Endereço</div>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="logradouro" class="form-control" ng-model="logradouro" />
+                    <label class="form-label" for="logradouro">Logradouro</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="numero" class="form-control" ng-model="numero" />
+                    <label class="form-label" for="numero">Número</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="bairro" class="form-control" ng-model="bairro" />
+                    <label class="form-label" for="bairro">Bairro</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="cidade" class="form-control" ng-model="cidade" />
+                    <label class="form-label" for="cidade">Cidade</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <input type="text" id="uf" class="form-control" ng-model="uf" />
+                    <label class="form-label" for="uf">UF</label>
+                </div>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </form>
+    <div>
+        <div class="text-center fw-bolder p-4">Endereço</div>
+        <table class="table table-borderless">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">Logradouro</th>
+                    <th scope="col">Número</th>
+                    <th scope="col">Bairro</th>
+                    <th scope="col">Cidade - UF</th>
+                    <th scope="col">Opção</th>
+
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr ng-repeat="item in displayedData">
+                    <td>{{ item.logradouro }}</td>
+                    <td>{{ item.numero }}</td>
+                    <td>{{ item.bairro }}</td>
+                    <td>{{ item.cidade }} - {{item.uf}}</td>
+                    <td>
+                        <button class="btn btn-primary" ng-click="deleteEnd(item)">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+    </div>
+
+
+    <div>
+        <div class="d-flex justify-content-between  m-2 align-items-center">
+            <button class="btn btn-danger">
+                <a href="#/home" class="text-white">Cancelar</a>
+            </button>
+            <button class="btn btn-primary" type="submit" ng-click="updateData()">Salvar</button>
+        </div>
+    </div>
+
+
+
+</div>

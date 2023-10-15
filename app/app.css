@@ -1,0 +1,31 @@
+:root {
+    --text-color: #FFF;
+    --background-color: rgb(185, 70, 70)0c;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none !important;
+    /* color: var(--text-color); */
+}
+
+html,
+body {
+    background: var(--background-color) !important;
+    /* color: var(--text-color); */
+}
+
+.navbar {
+    background-color: rgba(73, 73, 73, 0.603) !important;
+}
+
+.icon{
+
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-Br" ng-app="myApp">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css" />
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="app.config.js"></script>
+    <!-- <script src="/shared/header/header.module.js"></script> -->
+    <script src="/view/user-list/list.module.js"></script>
+    <script src="/view/user-form/form.module.js"></script>
+    <script src="/view/edit-form/edit.module.js"></script>
+    <title>Meu Projeto AngularJS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/header/starcorp.png" alt="" class="navbar-img">
+            </a>
+        </div>
+    </nav>
+
+    <div ng-view></div>
+
+
+</body>
+
+</html>
