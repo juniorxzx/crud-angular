@@ -32,7 +32,12 @@ app.controller('EditController', function ($scope, $http, $routeParams) {
             .then(function (response) {
                 // Sucesso na solicitação
                 console.log('Solicitação POST bem-sucedida', response);
-           
+
+
+
+
+                loadUser()
+
             })
             .catch(function (error) {
                 // Erro na solicitação
