@@ -1,6 +1,6 @@
 # Guia de Instalação e Explicação do CRUD em Angular
 
-Este README fornece informações sobre como baixar um repositório do GitHub, instalar suas dependências e uma explicação do CRUD em Angular.
+Este README fornece informações sobre como baixar um repositório do GitHub e instalar suas dependências.
 
 ## Baixando o Repositório
 
