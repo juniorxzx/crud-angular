@@ -7,7 +7,7 @@ Este README fornece informações sobre como baixar um repositório do GitHub, i
 Para baixar este repositório do GitHub, siga os passos abaixo:
 
 ```sh
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/juniorxzx/crud-angular.git)https://github.com/juniorxzx/crud-angular.git
 
-cd seu-repositorio
+cd crud
 npm install
